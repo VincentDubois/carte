@@ -21,9 +21,19 @@ var lat = 48.852969;
 var lon = 2.349903;
 var villes = { // seules les villes ajoutées dans ce tableau sont affichées sur la carte
   "Paris": { "lat": 48.852969, "lon": 2.349903 },
-  "Brest": { "lat": 48.383, "lon": -4.500 },
-  "Quimper": { "lat": 48.000, "lon": -4.100 },
-  "Bayonne": { "lat": 43.500, "lon": -1.467 }
+  "Marseille": { "lat": 43.2961743, "lon": 5.3699525 },
+  "Bourbourg": { "lat": 50.9466619, "lon": -2.1973702 },
+  "Rennes": { "lat": 48.1113387, "lon": -1.6800198 },
+  "Cracovie": { "lat": 50.066216, "lon": 19.9415617 },
+  "Lens": { "lat": 50.4291723, "lon": 2.8319805 },
+  "Baltimore": { "lat": 39.2908816, "lon": -76.610759 },
+  "Roubaix": { "lat": 50.6915893, "lon": 3.1741734},
+  "Arras": { "lat": 50.291048, "lon": 2.7772211},
+  "Montpellier": { "lat": 43.6112422, "lon": 3.8767337},
+  "Lyon": { "lat": 45.6963425, "lon": 4.735948},
+
+
+
 };
 
 window.onload = function(){
@@ -119,19 +129,19 @@ window.onload = function(){
       </div>
 
       <div class="column col-auto">
-        <div id="ville_Paris" class="card bg-dark m-2"><!-- LEO LENS-->
+        <div id="ville_Lens" class="card bg-dark m-2"><!-- LEO LENS-->
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
                  la ville Afonctionne -->
           <div class="card-header">
-            <div class="card-title h5">Paris</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Lens</div>
+            <div class="card-subtitle text-gray">Nord pas de Calais</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="lens-2.jpg" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Lens est une ville de Pas de Calais, on peut y retrouver le Louvre Lens et plusieurs écoles tel que l'IUT de Lens ou se trouve le DUT MMI. 
           </div>
         </div>
       </div>
