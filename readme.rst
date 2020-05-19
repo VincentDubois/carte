@@ -22,7 +22,7 @@ Information sur le groupe :
 
 Plusieurs choses à modifier :
 
-  ```Html
+```Html
       var villes = { // seules les villes ajoutées dans ce tableau sont affichées sur la carte
         "Courrières": { "lat": 50.45, "lon": 2.9333 },
         "Brest": { "lat": 48.383, "lon": -4.500 }
