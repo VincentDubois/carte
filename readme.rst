@@ -17,10 +17,23 @@ s'exécute pas sur votre machine (pas de questions ou pas de fichier diagnostiqu
 contactez-moi.
 
 --------
-remarque
+Information sur le groupe :
 --------
 
-Sur un site réel, le serveur de tuiles (les images constituant la carte) devrait normalement
-être hébergé par vos soins. Ici, on utilise le serveur public gratuit d'OpenStreetMap
-qui est très sollicité et donc un peu lent. A noter que si Google Map est plus rapide,
-il n'est ni libre ni gratuit...
+Plusieurs choses à modifier :
+
+```html
+var villes = { // seules les villes ajoutées dans ce tableau sont affichées sur la carte
+  "Courrières": { "lat": 50.45, "lon": 2.9333 },
+  "Brest": { "lat": 48.383, "lon": -4.500 }
+};
+```
+La ville entre guillemet est le nom de l'**id** présent dans partie comme ci :
+```html
+<div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
+        <div id="ville_Courrières" class="card bg-dark m-2">
+        </div>
+      </div>
+
+```
+Ici le nom à mettre est "Courrières" :)
