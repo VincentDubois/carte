@@ -39,3 +39,5 @@ Attention a bien modifier la partie du code où suit votre nom :
 ```html
       <!-- Travail : Louis Boulanger -->
 ```
+# Date finale de rendu :
+Lorsque nous aurons toutes les villes, nous devrons éxécuter un script (à rendre sur moodle), j'accepte les pull requests jusqu'à Dimanche 12h, pour que tout le monde puisse gérer. Après ça too late ♥
