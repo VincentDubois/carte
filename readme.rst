@@ -1,6 +1,4 @@
-====================
-TP noté (DUT MMI S2)
-====================
+#TP noté (DUT MMI S2)
 
 Le site fourni affiche une liste de villes sur une carte, avec des marqueurs
 clicables renvoyant vers une courte description de la ville et une photo
