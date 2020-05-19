@@ -20,12 +20,10 @@ Information sur le groupe :
 
 Plusieurs choses à modifier :
 
-```Html
       var villes = { // seules les villes ajoutées dans ce tableau sont affichées sur la carte
         "Courrières": { "lat": 50.45, "lon": 2.9333 },
         "Brest": { "lat": 48.383, "lon": -4.500 }
       };
-      ```
 La ville entre guillemet est le nom de l'**id** présent dans partie comme ci :
 ```
 <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
