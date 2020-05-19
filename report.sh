@@ -7,10 +7,10 @@ read -p "Etiez-vous intégrateur ? (O/N) " inte
 ### Analyse
 remote="$(git remote -v)"
 echo "`whoami` https://github.com/$login/$depot">$resultat
-if [[ "$remote" =~ ^origin.*https://github.com/(.*)/$depot ]]; then
+if [[ "$remote" =~ origin.*https://github.com/(.*)/$depot ]]; then
   origin="${BASH_REMATCH[1]}"
 fi
-if [[ "$remote" =~ ^upstream.*https://github.com/(.*)/$depot ]]; then
+if [[ "$remote" =~ upstream.*https://github.com/(.*)/$depot ]]; then
   upstream="${BASH_REMATCH[1]}"
 fi
 echo "$origin/$upstream ($inte)">>$resultat
