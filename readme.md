@@ -31,7 +31,11 @@ La ville entre guillemet est le nom de l'**id** présent dans partie comme ci :
 <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
         <div id="ville_Courrières" class="card bg-dark m-2">
         </div>
-      </div>
+</div>
 
 ```
 Ici le nom à mettre est "Courrières" :)
+Attention a bien modifier la partie du code où suit votre nom : 
+```html
+      <!-- Travail : Louis Boulanger -->
+```
