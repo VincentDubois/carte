@@ -20,14 +20,14 @@
 var lat = 48.852969;
 var lon = 2.349903;
 var villes = { // seules les villes ajoutées dans ce tableau sont affichées sur la carte
-  "Paris": { "lat": 48.852969, "lon": 2.349903 },
+  "Wingles": {"lat": 44.700, "lon":-2.457},
+    "Paris": { "lat": 48.852969, "lon": 2.349903 },
   "Brest": { "lat": 48.383, "lon": -4.500 },
   "Quimper": { "lat": 48.000, "lon": -4.100 },
   "Bayonne": { "lat": 43.500, "lon": -1.467 },
-  "Dunkerque": { "lat":51.031035, "lon": 2.371752 },//Vanhaecke Valentin
-    "Doucelles":{"lat":  48.257 , "lon":1693} //FANNY GAUDRE
+  "Dunkerque": { "lat":51.031035, "lon": 2.371752 }, //Vanhaecke Valentin
+  "Doucelles": { "lat":48.257, "lon": 1693 }// Fanny Gaudre
 };
-
 window.onload = function(){
   // Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
   initMap();
@@ -121,7 +121,7 @@ window.onload = function(){
       </div>
         
          <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Fanny-->
-        <div id="Doucelles" class="card bg-dark m-2">
+        <div id="ville_Doucelles" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
                  la ville Afonctionne -->
           <div class="card-header">
