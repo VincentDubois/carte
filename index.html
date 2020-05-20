@@ -26,7 +26,7 @@ var villes = { // seules les villes ajoutées dans ce tableau sont affichées su
   "Dunkerque": { "lat":51.031035, "lon": 2.371752 }, //Vanhaecke Valentin
   "Canlers": { "lat":50.4862, "lon": 2.1461 },// Lucie Mayeur
   "Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson": { "lat": 48.62903, "lon": 4.64475 },//Lemort Olivier
-    "Mers les bains": { "lat": 50.0667, "lon": 1.3833} //Granger Julien
+    "Mers les bains": { "lat": 50.0667, "lon": 1.3833}, //Granger Julien
     //Marc
     //Lilian
     //Antonin
@@ -38,7 +38,7 @@ var villes = { // seules les villes ajoutées dans ce tableau sont affichées su
     //Nicolas Rosaye
     //Theo
     //Mehdi
-    //Thibault
+    "Achicourt": { "lat": 50.2731405, "lon": 2.7578837}//Thibault
 };
 
             window.onload = function(){
@@ -58,9 +58,9 @@ var villes = { // seules les villes ajoutées dans ce tableau sont affichées su
         <div id="map">
             <!-- Ici s'affichera la carte -->
         </div>
-        
+
     <div class="columns">
-          
+
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Val.B-->
         <div id="ville_La_Compote" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
@@ -78,21 +78,22 @@ var villes = { // seules les villes ajoutées dans ce tableau sont affichées su
           </div>
         </div>
         </div>
-        
+
         <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Thibault-->
-        <div id="ville_La_Compote" class="card bg-dark m-2">
+        <div id="ville_Achicourt" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
                  la ville Afonctionne -->
           <div class="card-header">
-            <div class="card-title h5">Wingles</div>
+            <div class="card-title h5">Achicourt</div>
             <div class="card-subtitle text-gray">Ville</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/LaCompote.JPG/280px-LaCompote.JPG" class="img-responsive">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/PSCRW_7677tonemapped.jpg/220px-PSCRW_7677tonemapped.jpg" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Ajouter description
+            Trés belle ville collé à arras ne possédant rien d'intérressant pour les jeunes
+            By Thibault LOYER
           </div>
         </div>
         </div>
@@ -114,7 +115,7 @@ la ville Afonctionne -->
                     </div>
                 </div>
             </div>
-        
+
 <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Theo-->
                 <div id="ville_Wingles" class="card bg-dark m-2">
                     <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
@@ -132,7 +133,7 @@ la ville Afonctionne -->
                     </div>
                 </div>
             </div>
-        
+
         <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Mehdi-->
                 <div id="ville_Wingles" class="card bg-dark m-2">
                     <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
@@ -249,11 +250,11 @@ la ville Afonctionne -->
             <img src="http://www.horizon-nomade.com/wp-content/uploads/2018/06/00_mers_les_bains_DSC08535-1080x675.jpg" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Mers-les-Bains est une commune française située dans le département de la Somme, en région Hauts-de-France. Le s se prononce à la fin de Mers, Avec Eu et Le Tréport, elle est l'une des trois principales villes de l'unité urbaine d'Eu qui fait entièrement partie de l'intercommunalité dénommée communauté de communes des Villes Sœurs.Granger Julien  
+            Mers-les-Bains est une commune française située dans le département de la Somme, en région Hauts-de-France. Le s se prononce à la fin de Mers, Avec Eu et Le Tréport, elle est l'une des trois principales villes de l'unité urbaine d'Eu qui fait entièrement partie de l'intercommunalité dénommée communauté de communes des Villes Sœurs.Granger Julien
           </div>
         </div>
 </div>
-        
+
  <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Nico.R-->
                 <div id="ville_Wingles" class="card bg-dark m-2">
                     <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
@@ -271,7 +272,7 @@ la ville Afonctionne -->
                     </div>
                 </div>
             </div>
-        
+
  <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Lilian-->
         <div id="ville_Bayonne" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
@@ -305,7 +306,7 @@ la ville Afonctionne -->
             Le petit village de Canlers se situe dans les Hauts-de-France (62). Canlers a environ 200 habitants et est très réputé pour sa production de lait pour la marque Häagen-Dazs.
           </div>
         </div>
-      </div> 
+      </div>
     <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Mark-->
         <div id="ville_Bayonne" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
@@ -322,7 +323,7 @@ la ville Afonctionne -->
             Insérez description...
           </div>
         </div>
-      </div> 
+      </div>
     <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Morine-->
         <div id="ville_Bayonne" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
@@ -339,7 +340,7 @@ la ville Afonctionne -->
             Insérez description...
           </div>
         </div>
-      </div> 
+      </div>
     <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Nico.G-->
         <div id="ville_Marnelavallee" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
@@ -357,7 +358,7 @@ la ville Afonctionne -->
           </div>
         </div>
       </div>
-        
+
        <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Olivier-->
          <div id="ville_Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers la ville Afonctionne -->
@@ -392,7 +393,7 @@ la ville Afonctionne -->
                 </div>
             </div>
         </div>
-          
+
           <div>
         <p class="footer bg-secondary text-center">
             Site réalisé avec <a href="https://picturepan2.github.io/spectre/">Spectre CSS.</a>
