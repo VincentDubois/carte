@@ -1,19 +1,19 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <title>Villes</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="spectre.min.css"/>
-  <link rel="stylesheet" href="spectre-icons.min.css"/>
-  <link rel="stylesheet" href="spectre-exp.min.css"/>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Villes</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="spectre.min.css"/>
+        <link rel="stylesheet" href="spectre-icons.min.css"/>
+        <link rel="stylesheet" href="spectre-exp.min.css"/>
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
-  <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.css" />
-  <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.Default.css" />
-  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
-  <script type='text/javascript' src='https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js'></script>
-  <script type='text/javascript' src='carte.js'></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.css" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.Default.css" />
+        <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+        <script type='text/javascript' src='https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js'></script>
+        <script type='text/javascript' src='carte.js'></script>
 
   <script type="text/javascript">
 // On initialise la latitude et la longitude de Paris (centre de la carte)
@@ -24,49 +24,44 @@ var villes = { // seules les villes ajoutées dans ce tableau sont affichées su
   "Brest": { "lat": 48.383, "lon": -4.500 },
   "Quimper": { "lat": 48.000, "lon": -4.100 },
   "Bayonne": { "lat": 43.500, "lon": -1.467 },
+  "La_Compote" : { "lat":45, "lon": 6 },  // Valentin Baviere
+   "Wingles": {"lat": 44.700, "lon":-2.457}, //Hervelyne Vasse
+   "MarnelaVallee": { "lat": 48.8704, "lon": 2.7828 }, //Nicolas Gigliotti
   "Dunkerque": { "lat":51.031035, "lon": 2.371752 }, //Vanhaecke Valentin
-  "La_Compote" : { "lat":45, "lon": 6 }  // Valentin Baviere
-
+  "Canlers": { "lat":50.4862, "lon": 2.1461 }// Lucie Mayeur
+   "Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson": { "lat": 48.62903, "lon": 4.64475 },//Lemort Olivier  
 };
 
-window.onload = function(){
-  // Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
-  initMap();
-};
-</script>
-<style type="text/css">
-			#map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
-				height:600px;
-			}
-		</style>
-<title>Villes</title>
+            window.onload = function(){
+                // Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
+                initMap();
+            };
+        </script>
+        <style type="text/css">
+            #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                height:600px;
+            }
+        </style>
+        <title>Villes</title>
 
-</head>
-
-<body>
-    <div id="map">
-			<!-- Ici s'affichera la carte -->
-		</div>
-    <div class="columns"> 
+    </head>
+    <body>
+        <div id="map">
+            <!-- Ici s'affichera la carte -->
 
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Hervelyne-->
-        <div id="ville_Paris" class="card bg-dark m-2">
-          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
-                 la ville Afonctionne -->
+        <div id="ville_Wingles" class="card bg-dark m-2">
           <div class="card-header">
-            <div class="card-title h5">Paris</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Wingles</div>
+            <div class="card-subtitle text-gray">Ville</div>
           </div>
           <div class="card-image">
-            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Mairie_de_Wingles.JPG/420px-Mairie_de_Wingles.JPG" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Capitale de France avec plus de 2.1 millions d'habitants. Paris compte parmi les villes les plus touristiques du monde. En plus, d'être une ville mondialement connu pour l'art, la mode, la gastronomie et la culture.
+            <p>Wingles est une commune française située dans le département du Pas-de-Calais en région Hauts-de-France. Elle fait partie de la Communaupole de Lens-Liévin (communauté d'agglomération) qui regroupe 36 communes et comptait 8 776 habitants en 2016.</p>
           </div>
-        </div>
-      </div>
-
+          
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Val.B-->
         <div id="ville_La_Compote" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
@@ -83,62 +78,79 @@ window.onload = function(){
             Valentin BAVIERE
           </div>
         </div>
-      </div>
+        <div class="columns"> 
 
-      <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"> <!--Valentin V.-->
-        <div id="ville_Dunkerque" class="card bg-dark m-2">
-          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
-                 la ville Afonctionne -->
-          <div class="card-header">
-            <div class="card-title h5">Dunkerque</div>
-            <div class="card-subtitle text-gray">Dunkerque</div>
-          </div>
-          <div class="card-image">
-            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://voyages.michelin.fr/sites/default/files/styles/poi_slideshow/public/images/travel_guide/NX-38995.jpg" style="width: 320px; height: 200px;" class="img-responsive">
-          </div>
-          <div class="card-body bg-secondary text-dark">
-            5ème ville la plus peuplée dans la région Hauts-de-France. Dunkerque est une commune française et une sous-préfecture du département du Nord. Avec son nombre de plus de 87 000 habitants, la ville de Dunkerque renferme de nombreux secrets et possède de nombreuses histoires à vous raconter.<br/>Par Valentin VANHAECKE
-          </div>
-        </div>
-      </div>
+            <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Hervelyne-->
+                <div id="ville_Paris" class="card bg-dark m-2">
+                    <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+la ville Afonctionne -->
+                    <div class="card-header">
+                        <div class="card-title h5">Paris</div>
+                        <div class="card-subtitle text-gray">Capitale</div>
+                    </div>
+                    <div class="card-image">
+                        <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body bg-secondary text-dark">
+                        Capitale de France avec plus de 2.1 millions d'habitants. Paris compte parmi les villes les plus touristiques du monde. En plus, d'être une ville mondialement connu pour l'art, la mode, la gastronomie et la culture.
+                    </div>
+                </div>
+            </div>
 
-      <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Ethan-->
-        <div id="ville_Bayonne" class="card bg-dark m-2">
-          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
-                 la ville Afonctionne -->
-          <div class="card-header">
-            <div class="card-title h5">Bayonne</div>
-            <div class="card-subtitle text-gray">Capitale</div>
-          </div>
-          <div class="card-image">
-            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
-          </div>
-          <div class="card-body bg-secondary text-dark">
-            Insérez description...
-          </div>
-        </div>
-      </div>
-        
-         <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Fanny-->
-        <div id="ville_Bayonne" class="card bg-dark m-2">
-          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
-                 la ville Afonctionne -->
-          <div class="card-header">
-            <div class="card-title h5">Bayonne</div>
-            <div class="card-subtitle text-gray">Capitale</div>
-          </div>
-          <div class="card-image">
-            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
-          </div>
-          <div class="card-body bg-secondary text-dark">
-            Insérez description...
-          </div>
-        </div>
-      </div>
+            <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Val.B-->
+                <div id="ville_Brest" class="card bg-dark m-2">
+                    <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+la ville Afonctionne -->
+                    <div class="card-header">
+                        <div class="card-title h5">Brest</div>
+                        <div class="card-subtitle text-gray">Capitale</div>
+                    </div>
+                    <div class="card-image">
+                        <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body bg-secondary text-dark">
+                        Insérez description...
+                    </div>
+                </div>
+            </div>
 
+            <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"> <!--Valentin V.-->
+                <div id="ville_Dunkerque" class="card bg-dark m-2">
+                    <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+la ville Afonctionne -->
+                    <div class="card-header">
+                        <div class="card-title h5">Dunkerque</div>
+                        <div class="card-subtitle text-gray">Dunkerque</div>
+                    </div>
+                    <div class="card-image">
+                        <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                        <img src="https://voyages.michelin.fr/sites/default/files/styles/poi_slideshow/public/images/travel_guide/NX-38995.jpg" style="width: 320px; height: 200px;" class="img-responsive">
+                    </div>
+                    <div class="card-body bg-secondary text-dark">
+                        5ème ville la plus peuplée dans la région Hauts-de-France. Dunkerque est une commune française et une sous-préfecture du département du Nord. Avec son nombre de plus de 87 000 habitants, la ville de Dunkerque renferme de nombreux secrets et possède de nombreuses histoires à vous raconter.<br/>Par Valentin VANHAECKE
+                    </div>
+                </div>
+            </div>
+
+            <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Ethan-->
+                <div id="ville_Bayonne" class="card bg-dark m-2">
+                    <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+la ville Afonctionne -->
+                    <div class="card-header">
+                        <div class="card-title h5">Bayonne</div>
+                        <div class="card-subtitle text-gray">Capitale</div>
+                    </div>
+                    <div class="card-image">
+                        <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body bg-secondary text-dark">
+                        Insérez description...
+                    </div>
+                </div>
+            </div>
  <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Antonin-->
         <div id="ville_Bayonne" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
@@ -225,19 +237,19 @@ window.onload = function(){
         </div>
       </div>
  <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Lucie-->
-        <div id="ville_Bayonne" class="card bg-dark m-2">
+        <div id="ville_Canlers" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
                  la ville Afonctionne -->
           <div class="card-header">
-            <div class="card-title h5">Bayonne</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Canlers</div>
+            <div class="card-subtitle text-gray">Village</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/%C3%89glise_Notre-Dame-du-Rosaire_de_Canlers.JPG" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Insérez description Lucie Mayeur
           </div>
         </div>
       </div> <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Mark-->
@@ -273,46 +285,215 @@ window.onload = function(){
           </div>
         </div>
       </div> <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Nico.G-->
-        <div id="ville_Bayonne" class="card bg-dark m-2">
+        <div id="ville_Marnelavallee" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
                  la ville Afonctionne -->
           <div class="card-header">
-            <div class="card-title h5">Bayonne</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Marne-la-Vallée</div>
+            <div class="card-subtitle text-gray">Ville</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Serrisplacetoscaneserris.jpg/1920px-Serrisplacetoscaneserris.jpg" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Nicolas Gigliotti
           </div>
         </div>
       </div>
         
- <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Olivier-->
-        <div id="ville_Bayonne" class="card bg-dark m-2">
-          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
-                 la ville Afonctionne -->
-          <div class="card-header">
-            <div class="card-title h5">Bayonne</div>
-            <div class="card-subtitle text-gray">Capitale</div>
-          </div>
-          <div class="card-image">
-            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
-          </div>
-          <div class="card-body bg-secondary text-dark">
-            Insérez description...
-          </div>
+       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Olivier-->
+         <div id="ville_Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson" class="card bg-dark m-2">
+          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers la ville Afonctionne -->
+            <div class="card-header">
+                   <div class="card-title h5">Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson</div>
+                        <div class="card-subtitle text-gray">ville</div>
+                    </div>
+                    <div class="card-image">
+                        <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                        <img src="https://lh3.googleusercontent.com/proxy/7-aa_aWN0ZjKbBxKU1J22-tU4hl8qnqh50vnKGnvYabvZamnDnkUnoIRgZYmhnJC5UqSlxBZ1BHBflcRgAMCZJCU2puxXCSOqtvsQYRV">
+                    </div>
+                    <div class="card-body bg-secondary text-dark">
+                        ville française avec le plus grand nom... LemortOlivier
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Fanny-->
+                <div id="ville_Bayonne" class="card bg-dark m-2">
+                    <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+la ville Afonctionne -->
+                    <div class="card-header">
+                        <div class="card-title h5">Bayonne</div>
+                        <div class="card-subtitle text-gray">Capitale</div>
+                    </div>
+                    <div class="card-image">
+                        <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body bg-secondary text-dark">
+                        Insérez description...
+                    </div>
+                </div>
+            </div>
+
+            <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Antonin-->
+                <div id="ville_Bayonne" class="card bg-dark m-2">
+                    <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+la ville Afonctionne -->
+                    <div class="card-header">
+                        <div class="card-title h5">Bayonne</div>
+                        <div class="card-subtitle text-gray">Capitale</div>
+                    </div>
+                    <div class="card-image">
+                        <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body bg-secondary text-dark">
+                        Insérez description...
+                    </div>
+                </div>
+            </div>
+            <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Aurélien-->
+                <div id="ville_Bayonne" class="card bg-dark m-2">
+                    <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+la ville Afonctionne -->
+                    <div class="card-header">
+                        <div class="card-title h5">Bayonne</div>
+                        <div class="card-subtitle text-gray">Capitale</div>
+                    </div>
+                    <div class="card-image">
+                        <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body bg-secondary text-dark">
+                        Insérez description...
+                    </div>
+                </div>
+            </div>
+            <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Ferdinand-->
+                <div id="ville_Bayonne" class="card bg-dark m-2">
+                    <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+la ville Afonctionne -->
+                    <div class="card-header">
+                        <div class="card-title h5">Bayonne</div>
+                        <div class="card-subtitle text-gray">Capitale</div>
+                    </div>
+                    <div class="card-image">
+                        <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body bg-secondary text-dark">
+                        Insérez description...
+                    </div>
+                </div>
+            </div>
+            <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Julien-->
+                <div id="ville_Bayonne" class="card bg-dark m-2">
+                    <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+la ville Afonctionne -->
+                    <div class="card-header">
+                        <div class="card-title h5">Bayonne</div>
+                        <div class="card-subtitle text-gray">Capitale</div>
+                    </div>
+                    <div class="card-image">
+                        <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body bg-secondary text-dark">
+                        Insérez description...
+                    </div>
+                </div>
+            </div>
+            <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Lilian-->
+                <div id="ville_Bayonne" class="card bg-dark m-2">
+                    <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+la ville Afonctionne -->
+                    <div class="card-header">
+                        <div class="card-title h5">Bayonne</div>
+                        <div class="card-subtitle text-gray">Capitale</div>
+                    </div>
+                    <div class="card-image">
+                        <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body bg-secondary text-dark">
+                        Insérez description...
+                    </div>
+                </div>
+            </div>
+            <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Lucie-->
+                <div id="ville_Bayonne" class="card bg-dark m-2">
+                    <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+la ville Afonctionne -->
+                    <div class="card-header">
+                        <div class="card-title h5">Bayonne</div>
+                        <div class="card-subtitle text-gray">Capitale</div>
+                    </div>
+                    <div class="card-image">
+                        <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body bg-secondary text-dark">
+                        Insérez description...
+                    </div>
+                </div>
+            </div> <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Mark-->
+            <div id="ville_Bayonne" class="card bg-dark m-2">
+                <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+la ville Afonctionne -->
+                <div class="card-header">
+                    <div class="card-title h5">Bayonne</div>
+                    <div class="card-subtitle text-gray">Capitale</div>
+                </div>
+                <div class="card-image">
+                    <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+                </div>
+                <div class="card-body bg-secondary text-dark">
+                    Insérez description...
+                </div>
+            </div>
+            </div> <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Morine-->
+            <div id="ville_Bayonne" class="card bg-dark m-2">
+                <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+la ville Afonctionne -->
+                <div class="card-header">
+                    <div class="card-title h5">Bayonne</div>
+                    <div class="card-subtitle text-gray">Capitale</div>
+                </div>
+                <div class="card-image">
+                    <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+                </div>
+                <div class="card-body bg-secondary text-dark">
+                    Insérez description...
+                </div>
+            </div>
+            </div> <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Nico.G-->
+            <div id="ville_Bayonne" class="card bg-dark m-2">
+                <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+la ville Afonctionne -->
+                <div class="card-header">
+                    <div class="card-title h5">Bayonne</div>
+                    <div class="card-subtitle text-gray">Capitale</div>
+                </div>
+                <div class="card-image">
+                    <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+                </div>
+                <div class="card-body bg-secondary text-dark">
+                    Insérez description...
+                </div>
+            </div>
+            </div>
+
         </div>
-      </div>
 
-    </div>
-
-    <p class="footer bg-secondary text-center">
-  Site réalisé avec <a href="https://picturepan2.github.io/spectre/">Spectre CSS.</a>
-  Carte OpenStreetMap gérée avec Leaflet (<a href="https://nouvelle-techno.fr/actualites/2018/05/11/pas-a-pas-inserer-une-carte-openstreetmap-sur-votre-site">tuto</a>)
-</p>
-</body>
+        <p class="footer bg-secondary text-center">
+            Site réalisé avec <a href="https://picturepan2.github.io/spectre/">Spectre CSS.</a>
+            Carte OpenStreetMap gérée avec Leaflet (<a href="https://nouvelle-techno.fr/actualites/2018/05/11/pas-a-pas-inserer-une-carte-openstreetmap-sur-votre-site">tuto</a>)
+        </p>
+    </body>
 </html>
