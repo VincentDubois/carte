@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -20,7 +20,8 @@
 var lat = 48.852969;
 var lon = 2.349903;
 var villes = { // seules les villes ajoutées dans ce tableau sont affichées sur la carte
-  "Paris": { "lat": 48.852969, "lon": 2.349903 },
+  "Wingles": {"lat": 44.700, "lon":-2.457},
+    "Paris": { "lat": 48.852969, "lon": 2.349903 },
   "Brest": { "lat": 48.383, "lon": -4.500 },
   "Quimper": { "lat": 48.000, "lon": -4.100 },
   "Bayonne": { "lat": 43.500, "lon": -1.467 },
@@ -49,19 +50,16 @@ window.onload = function(){
     <div class="columns"> 
 
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1"><!--Hervelyne-->
-        <div id="ville_Paris" class="card bg-dark m-2">
-          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
-                 la ville Afonctionne -->
+        <div id="ville_Wingles" class="card bg-dark m-2">
           <div class="card-header">
-            <div class="card-title h5">Paris</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Wingles</div>
+            <div class="card-subtitle text-gray">Ville</div>
           </div>
           <div class="card-image">
-            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Mairie_de_Wingles.JPG/420px-Mairie_de_Wingles.JPG" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Capitale de France avec plus de 2.1 millions d'habitants. Paris compte parmi les villes les plus touristiques du monde. En plus, d'être une ville mondialement connu pour l'art, la mode, la gastronomie et la culture.
+            <p>Wingles est une commune française située dans le département du Pas-de-Calais en région Hauts-de-France. Elle fait partie de la Communaupole de Lens-Liévin (communauté d'agglomération) qui regroupe 36 communes et comptait 8 776 habitants en 2016.</p>
           </div>
         </div>
       </div>
