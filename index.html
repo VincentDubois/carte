@@ -19,7 +19,13 @@
 // On initialise la latitude et la longitude de Paris (centre de la carte)
 var lat = 48.852969;
 var lon = 2.349903;
-var villes = { // seules les villes ajoutées dans ce tableau sont affichées sur la carte
+var villes = { // Seules les villes ajoutées dans ce tableau sont affichées sur la carte
+               // Le nom de la ville "qqChose" doit correspondre à un div d'id "ville_qqChose" plus bas
+               // Les coordonnées lat/lon d'une ville peuvent être trouvées sur wikipedia,
+               // ou dans google maps. Par exemple sur google maps, Les deux premiers
+               // nombre dans l'url sont lat et lon :
+               // https://www.google.com/maps/@50.4255595,2.8231708,12.95z
+               // correspond à Lens, avec lat : 50.4255595 lon :2.3231708
   "Paris": { "lat": 48.852969, "lon": 2.349903 },
   "Brest": { "lat": 48.383, "lon": -4.500 },
   "Quimper": { "lat": 48.000, "lon": -4.100 },
@@ -46,10 +52,12 @@ window.onload = function(){
 		</div>
     <div class="columns">
 
+      <!-- Début du div de la première ville -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
         <div id="ville_Paris" class="card bg-dark m-2">
-          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
-                 la ville Afonctionne -->
+          <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
+                la ville A fonctionne. Pensez à ajouter les coordonnées de A
+                dans le tableau ville, en début de fichier -->
           <div class="card-header">
             <div class="card-title h5">Paris</div>
             <div class="card-subtitle text-gray">Capitale</div>
@@ -63,11 +71,14 @@ window.onload = function(){
           </div>
         </div>
       </div>
+      <!-- Fin du div de la première ville -->
+
 
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
         <div id="ville_Brest" class="card bg-dark m-2">
-          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
-                 la ville Afonctionne -->
+          <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
+                la ville A fonctionne. Pensez à ajouter les coordonnées de A
+                dans le tableau ville, en début de fichier -->
           <div class="card-header">
             <div class="card-title h5">Brest</div>
             <div class="card-subtitle text-gray">Capitale</div>
@@ -84,8 +95,9 @@ window.onload = function(){
 
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
         <div id="ville_Quimper" class="card bg-dark m-2">
-          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
-                 la ville Afonctionne -->
+          <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
+                la ville A fonctionne. Pensez à ajouter les coordonnées de A
+                dans le tableau ville, en début de fichier -->
           <div class="card-header">
             <div class="card-title h5">Quimper</div>
             <div class="card-subtitle text-gray">Capitale</div>
@@ -102,8 +114,9 @@ window.onload = function(){
 
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
         <div id="ville_Bayonne" class="card bg-dark m-2">
-          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
-                 la ville Afonctionne -->
+          <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
+                la ville A fonctionne. Pensez à ajouter les coordonnées de A
+                dans le tableau ville, en début de fichier -->
           <div class="card-header">
             <div class="card-title h5">Bayonne</div>
             <div class="card-subtitle text-gray">Capitale</div>
