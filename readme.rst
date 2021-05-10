@@ -17,7 +17,7 @@ s'exécute pas sur votre machine (pas de questions ou pas de fichier diagnostiqu
 contactez-moi.
 
 --------
-remarque
+Remarque
 --------
 
 Sur un site réel, le serveur de tuiles (les images constituant la carte) devrait normalement
