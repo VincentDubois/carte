@@ -29,7 +29,8 @@ var villes = { // Seules les villes ajoutées dans ce tableau sont affichées su
   "Paris": { "lat": 48.852969, "lon": 2.349903 },
   "Brest": { "lat": 48.383, "lon": -4.500 },
   "Quimper": { "lat": 48.000, "lon": -4.100 },
-  "Bayonne": { "lat": 43.500, "lon": -1.467 }
+  "Bayonne": { "lat": 43.500, "lon": -1.467 },
+  "Avignon": { "lat": 43.9493, "long": 4.80559}
 };
 
 window.onload = function(){
@@ -131,6 +132,27 @@ window.onload = function(){
         </div>
       </div>
 
+      <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
+        <div id="ville_Avignon" class="card bg-dark m-2">
+          <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
+                la ville A fonctionne. Pensez à ajouter les coordonnées de A
+                dans le tableau ville, en début de fichier -->
+          <div class="card-header">
+            <div class="card-title h5">Avignon</div>
+            <div class="card-subtitle text-gray">Capitale</div>
+          </div>
+          <div class="card-image">
+            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Vue_a%C3%A9rienne_2_JP_Campomar.jpg/1280px-Vue_a%C3%A9rienne_2_JP_Campomar.jpg">
+          </div>
+          <div class="card-body bg-secondary text-dark">
+            Avignon est une ville du Sud de la France, située au confluent du Rhône et de la Durance. C'est la ville où siège le conseil du Grand Avignon. 
+            Avignon est le chef-lieu de l'arrondissement d'Avignon et du département du Vaucluse. Ses habitants s'appellent les Avignonnais.
+          </div>
+        </div>
+      </div>
+        
+        
     </div>
 
     <p class="footer bg-secondary text-center">
