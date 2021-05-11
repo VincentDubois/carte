@@ -29,7 +29,8 @@ var villes = { // Seules les villes ajoutées dans ce tableau sont affichées su
   "Paris": { "lat": 48.852969, "lon": 2.349903 },
   "Brest": { "lat": 48.383, "lon": -4.500 },
   "Quimper": { "lat": 48.000, "lon": -4.100 },
-  "Bayonne": { "lat": 43.500, "lon": -1.467 }
+  "Bayonne": { "lat": 43.500, "lon": -1.467 },
+  "Courbevoie": { "lat": 48.900552, "lon": 2.25929}
 };
 
 window.onload = function(){
@@ -130,6 +131,26 @@ window.onload = function(){
           </div>
         </div>
       </div>
+      <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
+        <div id="ville_Courbevoie" class="card bg-dark m-2">
+          <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
+                la ville A fonctionne. Pensez à ajouter les coordonnées de A
+                dans le tableau ville, en début de fichier -->
+          <div class="card-header">
+            <div class="card-title h5">Courbevoie</div>
+            <div class="card-subtitle text-gray">Ville française</div>
+          </div>
+          <div class="card-image">
+            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+            <img src="https://urosperich.com/wp-content/uploads/2019/10/Courbevoie-320x200.jpg" class="img-responsive">
+          </div>
+          <div class="card-body bg-secondary text-dark">
+            Avec ses gratte-ciel contemporains emblématiques, Courbevoie est une ville animée connue pour le quartier des affaires de La Défense, qui comprend une esplanade bordée de restaurants et d'œuvres d'art monumentales. Le parc de Bécon possède deux vestiges de l'Exposition universelle de 1878 : le pavillon des Indes surmonté de dômes en or, où des visites guidées sont organisées, et le pavillon coloré de la Suède et de la Norvège, qui abrite le musée Roybet-Fould dédié au peintre Ferdinand Roybet.
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     </div>
 
