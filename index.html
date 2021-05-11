@@ -30,23 +30,20 @@ var villes = { // Seules les villes ajoutées dans ce tableau sont affichées su
   "Brest": { "lat": 48.383, "lon": -4.500 },
   "Quimper": { "lat": 48.000, "lon": -4.100 },
   "Bayonne": { "lat": 43.500, "lon": -1.467 },
-    
 
+<!-- partie de davina -->
 
+  "Trois-Rivières": { "lat": 46.3724234, "lon": -72.8759707 },
 
 <!-- partie de louis -->
-<<<<<<< HEAD
-  "Hulluch":{ "lat": 50.487, "lon": 2.808 },
-=======
   "":{ "lat": 4.624335, "lon": -74.063644},
->>>>>>> e8f24852220d7c0c34eccbd0d6efc0ff1c0791c6
 
 <!-- partie de lucas -->
-"Courbevoie": { "lat": 48.900552, "lon": 2.25929},
+  "":{},
 <!-- partie de alexis -->
   "":{},
 <!-- partie de damien -->
-  "":{},
+  "Moscou": { "lat": 55.757425, "lon": 37.619183 },
 <!-- partie de justine -->
   "":{},
 <!-- partie de anais -->
@@ -55,7 +52,7 @@ var villes = { // Seules les villes ajoutées dans ce tableau sont affichées su
   "":{},
 
 <!-- partie de lucie -->
-  "Perpignan": { "lat": 42.688, "lon": 2.834 }
+  "":{},
 };
 
 window.onload = function(){
@@ -170,7 +167,7 @@ window.onload = function(){
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://www.lesaffaires.com/uploads/images/normal/0db41c774d1bf29f5a1b09ca2da12ca3.jpg">
+            <img src="trois-rivieres.jpg">
      </div>
           <div class="card-body bg-secondary text-dark">
             Insérez description...
@@ -181,24 +178,23 @@ window.onload = function(){
 <!-- partie de lucas -->
 
 <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-  <div id="ville_Courbevoie" class="card bg-dark m-2">
-    <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
-          la ville A fonctionne. Pensez à ajouter les coordonnées de A
-          dans le tableau ville, en début de fichier -->
-    <div class="card-header">
-      <div class="card-title h5">Courbevoie</div>
-      <div class="card-subtitle text-gray">Ville française</div>
-    </div>
-    <div class="card-image">
-      <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-      <img src="https://urosperich.com/wp-content/uploads/2019/10/Courbevoie-320x200.jpg" class="img-responsive">
-    </div>
-    <div class="card-body bg-secondary text-dark">
-      Avec ses gratte-ciel contemporains emblématiques, Courbevoie est une ville animée connue pour le quartier des affaires de La Défense, qui comprend une esplanade bordée de restaurants et d'œuvres d'art monumentales. Le parc de Bécon possède deux vestiges de l'Exposition universelle de 1878 : le pavillon des Indes surmonté de dômes en or, où des visites guidées sont organisées, et le pavillon coloré de la Suède et de la Norvège, qui abrite le musée Roybet-Fould dédié au peintre Ferdinand Roybet.
-    </div>
-  </div>
-</div>
-</div>
+        <div id="ville_troisrivieres" class="card bg-dark m-2">
+          <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
+                la ville A fonctionne. Pensez à ajouter les coordonnées de A
+                dans le tableau ville, en début de fichier -->
+          <div class="card-header">
+            <div class="card-title h5">Trois-Rivières</div>
+            <div class="card-subtitle text-gray">Capitale</div>
+          </div>
+          <div class="card-image">
+            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+            <img src="trois-rivieres.jpg">
+     </div>
+          <div class="card-body bg-secondary text-dark">
+            Insérez description...
+          </div>
+        </div>
+      </div>
 
 <!-- partie de louis -->
 
@@ -225,6 +221,27 @@ window.onload = function(){
 <!-- partie de damien -->
 
 <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
+  <div id="ville_Moscou" class="card bg-dark m-2">
+    <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
+          la ville A fonctionne. Pensez à ajouter les coordonnées de A
+          dans le tableau ville, en début de fichier -->
+    <div class="card-header">
+      <div class="card-title h5">Moscou</div>
+      <div class="card-subtitle text-gray">Capitale</div>
+    </div>
+    <div class="card-image">
+      <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+      <img src="https://eurofamily.ru/wp-content/themes/Theme/assets/img/%D0%BC%D0%BE%D0%BD%D0%B0%D1%81.jpg" class="img-responsive">
+    </div>
+    <div class="card-body bg-secondary text-dark">
+      Insérez description...
+    </div>
+  </div>       
+</div>
+
+<!-- partie de alexis -->
+
+<div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
         <div id="ville_troisrivieres" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
@@ -239,27 +256,6 @@ window.onload = function(){
      </div>
           <div class="card-body bg-secondary text-dark">
             Insérez description...
-          </div>
-        </div>
-      </div>
-
-<!-- partie de alexis -->
-
-<div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Hulluch" class="card bg-dark m-2">
-          <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
-                la ville A fonctionne. Pensez à ajouter les coordonnées de A
-                dans le tableau ville, en début de fichier -->
-          <div class="card-header">
-            <div class="card-title h5">Hulluch</div>
-            <div class="card-subtitle text-gray">Capitale</div>
-          </div>
-          <div class="card-image">
-            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/fr/0/05/Mairie_d%27Hulluch.JPG">
-     </div>
-          <div class="card-body bg-secondary text-dark">
-           Alexis Quilliot
           </div>
         </div>
       </div>
@@ -293,55 +289,78 @@ window.onload = function(){
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Courbevoie</div>
-            <div class="card-subtitle text-gray">Ville française</div>
-          </div>
-          <div class="card-image">
-            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://urosperich.com/wp-content/uploads/2019/10/Courbevoie-320x200.jpg" class="img-responsive">
-          </div>
-          <div class="card-body bg-secondary text-dark">
-            Avec ses gratte-ciel contemporains emblématiques, Courbevoie est une ville animée connue pour le quartier des affaires de La Défense, qui comprend une esplanade bordée de restaurants et d'œuvres d'art monumentales. Le parc de Bécon possède deux vestiges de l'Exposition universelle de 1878 : le pavillon des Indes surmonté de dômes en or, où des visites guidées sont organisées, et le pavillon coloré de la Suède et de la Norvège, qui abrite le musée Roybet-Fould dédié au peintre Ferdinand Roybet.
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-      <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Moscou" class="card bg-dark m-2">
-          <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
-                la ville A fonctionne. Pensez à ajouter les coordonnées de A
-                dans le tableau ville, en début de fichier -->
-          <div class="card-header">
-            <div class="card-title h5">Moscou</div>
+            <div class="card-title h5">Trois-Rivières</div>
             <div class="card-subtitle text-gray">Capitale</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://eurofamily.ru/wp-content/themes/Theme/assets/img/%D0%BC%D0%BE%D0%BD%D0%B0%D1%81.jpg" class="img-responsive">
+            <img src="trois-rivieres.jpg">
+     </div>
+          <div class="card-body bg-secondary text-dark">
+            Insérez description...
           </div>
+        </div>
+      </div>
 
+<!-- partie de justine -->
+
+<div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
+        <div id="ville_troisrivieres" class="card bg-dark m-2">
+          <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
+                la ville A fonctionne. Pensez à ajouter les coordonnées de A
+                dans le tableau ville, en début de fichier -->
+          <div class="card-header">
+            <div class="card-title h5">Trois-Rivières</div>
+            <div class="card-subtitle text-gray">Capitale</div>
+          </div>
+          <div class="card-image">
+            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+            <img src="trois-rivieres.jpg">
+     </div>
+          <div class="card-body bg-secondary text-dark">
+            Insérez description...
+          </div>
+        </div>
+      </div>
+
+<!-- partie de anais -->
+
+<div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
+        <div id="ville_troisrivieres" class="card bg-dark m-2">
+          <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
+                la ville A fonctionne. Pensez à ajouter les coordonnées de A
+                dans le tableau ville, en début de fichier -->
+          <div class="card-header">
+            <div class="card-title h5">Trois-Rivières</div>
+            <div class="card-subtitle text-gray">Capitale</div>
+          </div>
+          <div class="card-image">
+            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+            <img src="trois-rivieres.jpg">
+     </div>
+          <div class="card-body bg-secondary text-dark">
+            Insérez description...
+          </div>
         </div>
       </div>
 
 <!-- partie de lucie -->
 
 <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_perpignan" class="card bg-dark m-2">
+        <div id="ville_troisrivieres" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Perpignan</div>
-            <div class="card-subtitle text-gray">Préfecture du département des Pyrénées-Orientales</div>
+            <div class="card-title h5">Trois-Rivières</div>
+            <div class="card-subtitle text-gray">Capitale</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://p.bookcdn.com/data/Photos/320x200/10255/1025500/1025500657/Novotel-Suites-Perpignan-Centre-photos-Exterior-Novotel-Suites-Perpignan-Centre.JPEG">
+            <img src="trois-rivieres.jpg">
      </div>
           <div class="card-body bg-secondary text-dark">
-              Préfécture du département des Pyrénées-Orientales en Occitanie.
+            Insérez description...
           </div>
         </div>
       </div>
