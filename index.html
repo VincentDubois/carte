@@ -26,12 +26,14 @@ var villes = { // Seules les villes ajoutées dans ce tableau sont affichées su
                // nombre dans l'url sont lat et lon :
                // https://www.google.com/maps/@50.4255595,2.8231708,12.95z
                // correspond à Lens, avec lat : 50.4255595 lon :2.3231708
+  "Marseille": {"lat":43.3, "lon": 5.4},
   "Paris": { "lat": 48.852969, "lon": 2.349903 },
   "Brest": { "lat": 48.383, "lon": -4.500 },
   "Quimper": { "lat": 48.000, "lon": -4.100 },
   "Bayonne": { "lat": 43.500, "lon": -1.467 },
   "Dunkerque": { "lat": 51.034368, "lon": 2.376776 },
-};
+    "Lyon": { "lat": 45.764043, "lon": 4.835659},
+    "Fouquières-lez-lens": { "lat": 50.4284142, "lon": 2.8891365 }
 
 window.onload = function(){
   // Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
@@ -55,20 +57,20 @@ window.onload = function(){
 
       <!-- Début du div de Fanny -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Paris" class="card bg-dark m-2">
+        <div id="ville_Fouquières-lez-lens" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Paris</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Fouquières-lez-lens</div>
+            <div class="card-subtitle text-gray">Ville</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="C:\Users\fanny\OneDrive\Bureau\Sans titre-1.jpg">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Fouquières-lès-Lens (nommée également Fouquières-lez-Lens non officiellement) est une commune française située dans le département du Pas-de-Calais en région Hauts-de-France. Elle fait partie de la Communaupole de Lens-Liévin (communauté d'agglomération) qui regroupe 36 communes et comptait 244 561 habitants en 2010. La Compagnie des mines de Courrières y a ouvert ses fosses numéros 6-14 et 7-19.
           </div>
         </div>
       </div>
@@ -139,20 +141,20 @@ window.onload = function(){
 
       <!-- Début du div de Christopher -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Paris" class="card bg-dark m-2">
+        <div id="ville_Bruay-La-Buissière" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Paris</div>
+            <div class="card-title h5">Bruay-La-Buissière</div>
             <div class="card-subtitle text-gray">Capitale</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://p.monumentum.fr/main/62/pa62000007-hotel-ville.jpg" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Petite ville du Nord-pas-de-calais
           </div>
         </div>
       </div>
@@ -202,17 +204,17 @@ window.onload = function(){
 
       <!-- Début du div de Maxime -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Paris" class="card bg-dark m-2">
+        <div id="ville_Marseille" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Paris</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Marseille</div>
+            <div class="card-subtitle text-gray">La ville du soleil</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Notre_Dame_de_la_Garde.jpg/1280px-Notre_Dame_de_la_Garde.jpg" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
             Insérez description...
@@ -270,15 +272,15 @@ window.onload = function(){
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Paris</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Lyon</div>
+            <div class="card-subtitle text-gray">Ville</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Vue_de_Lyon_depuis_la_passerelle_Raymond_Barre.JPG/1920px-Vue_de_Lyon_depuis_la_passerelle_Raymond_Barre.JPG" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Lyon, ville française de la région historique Rhône-Alpes, se trouve à la jonction du Rhône et de la Saône. Son centre témoigne de 2 000 ans d'histoire, avec son amphithéâtre romain des Trois Gaules, l'architecture médiévale et Renaissance du Vieux Lyon et la modernité du quartier de la Confluence sur la Presqu'île. Les Traboules, passages couverts entre les immeubles, relient le Vieux Lyon à la colline de La Croix-Rousse.
           </div>
         </div>
       </div>
@@ -410,6 +412,5 @@ window.onload = function(){
     <p class="footer bg-secondary text-center">
   Site réalisé avec <a href="https://picturepan2.github.io/spectre/">Spectre CSS.</a>
   Carte OpenStreetMap gérée avec Leaflet (<a href="https://nouvelle-techno.fr/actualites/2018/05/11/pas-a-pas-inserer-une-carte-openstreetmap-sur-votre-site">tuto</a>)
-</p>
-</body>
+</p> </body>
 </html>
