@@ -1,2 +1,32 @@
-diagnostique.txt
+
+#### backup files
+*~
+*.bak
+._*
 .nfs*
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+##### Dropbox
+# Dropbox settings and caches
+.dropbox
+.dropbox.attr
+.dropbox.cache
+
+##### VisualStudioCode
+.vscode/*
+*.code-workspace
+.history/
+
+##### NetBeans
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
