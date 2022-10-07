@@ -20,6 +20,7 @@
 .vscode/*
 *.code-workspace
 .history/
+.idea/
 
 ##### NetBeans
 **/nbproject/private/
